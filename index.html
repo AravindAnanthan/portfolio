@@ -242,6 +242,12 @@
       position: relative;
     }
 
+    @media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: none !important; 
+    }
+}
+
     .navbar .nav-link::after {
       content: '';
       position: absolute;
@@ -680,6 +686,18 @@
         <img class="brand-logo" src="pic.jpeg" alt="Aravind Kuduva Ananthan">
         <span class="fw-semibold">Aravind <span class="gradient-text">KA</span></span>
       </a>
+
+      <div class="d-flex align-items-center gap-2 flex-shrink-0">
+        <button class="btn-icon" id="themeToggle" type="button" aria-label="Toggle colour theme" title="Toggle theme">
+          <i class="bi bi-moon-stars"></i><i class="bi bi-sun" style="display:none"></i>
+        </button>
+        <a href="Aravind_Kuduva_Ananthan_Resume.pdf" download
+          class="btn btn-brand d-none d-md-inline-flex align-items-center gap-2"><i class="bi bi-download"></i>
+          Resume</a>
+        <a href="Aravind_Kuduva_Ananthan_Resume.pdf" download class="btn btn-outline-brand btn-sm d-md-none px-2"
+          aria-label="Download resume"><i class="bi bi-download"></i></a>
+      </div>
+
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
         aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -695,16 +713,7 @@
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
-      <div class="d-flex align-items-center gap-2 flex-shrink-0">
-        <button class="btn-icon" id="themeToggle" type="button" aria-label="Toggle colour theme" title="Toggle theme">
-          <i class="bi bi-moon-stars"></i><i class="bi bi-sun" style="display:none"></i>
-        </button>
-        <a href="Aravind_Kuduva_Ananthan_Resume.pdf" download
-          class="btn btn-brand d-none d-md-inline-flex align-items-center gap-2"><i class="bi bi-download"></i>
-          Resume</a>
-        <a href="Aravind_Kuduva_Ananthan_Resume.pdf" download class="btn btn-outline-brand btn-sm d-md-none px-2"
-          aria-label="Download resume"><i class="bi bi-download"></i></a>
-      </div>
+      
     </div>
   </nav>
 
@@ -728,15 +737,16 @@
             <div class="d-flex flex-wrap gap-3 align-items-center mt-4 reveal d4">
               <a href="Aravind_Kuduva_Ananthan_Resume.pdf" download class="btn btn-brand px-4 py-2"><i
                   class="bi bi-download me-2"></i>Download Resume</a>
-              <a href="#contact" class="btn btn-outline-brand px-4 py-2">Let&apos;s Talk</a>            
+              <a href="#contact" class="btn btn-outline-brand px-4 py-2">Let&apos;s Talk</a>
             </div>
           </div>
           <div class="col-lg-5">
             <div class="reveal d1">
               <div class="glass-card p-4 h-100">
-                <div class="d-flex align-items-center gap-3">                  
-                  <div style="min-width:0">                
-                    <span class="text-body-secondary small d-block">Assistant Manager &middot; Order to Cash (O2C) Operations &middot; Infosys
+                <div class="d-flex align-items-center gap-3">
+                  <div style="min-width:0">
+                    <span class="text-body-secondary small d-block">Assistant Manager &middot; Order to Cash (O2C)
+                      Operations &middot; Infosys
                       BPM</span>
                   </div>
                 </div>
@@ -819,7 +829,8 @@
                 enterprise-scale environments.</p>
               <p class="mb-3">Track record of leading cross-functional teams, developing KPIs and automated dashboards,
                 and implementing process enhancements that reduce costs and improve operational efficiency. Skilled in
-                <strong>Oracle/SAP systems</strong>, data analytics, and stakeholder management.</p>
+                <strong>Oracle/SAP systems</strong>, data analytics, and stakeholder management.
+              </p>
               <div class="d-flex flex-wrap gap-2 align-items-center">
                 <span class="badge rounded-pill badge-brand"><i class="bi bi-graph-up-arrow me-1"></i>Process
                   Optimisation</span>
@@ -849,7 +860,7 @@
                 <li class="d-flex gap-3"><span class="me-1"><i
                       class="bi bi-diagram-3 text-brand fs-5"></i></span><span><span class="fw-semibold d-block">Focus
                       Areas</span><span class="text-body-secondary d-block">O2C &middot; Q2C &middot; Order Management
-                      &middot; Billing &amp; Invoicing</span></span></li>               
+                      &middot; Billing &amp; Invoicing</span></span></li>
               </ul>
             </div>
           </div>
@@ -1196,7 +1207,8 @@
   <footer class="py-5">
     <div class="container">
       <div class="d-flex justify-content-center mb-3">
-        <img class="brand-logo" src="pic.jpeg" alt="Aravind Kuduva Ananthan" style="width:3.2rem;height:3.2rem;border-radius:1rem">
+        <img class="brand-logo" src="pic.jpeg" alt="Aravind Kuduva Ananthan"
+          style="width:3.2rem;height:3.2rem;border-radius:1rem">
       </div>
       <p class="text-center small text-body-secondary mb-1">© 2026 Aravind Kuduva Ananthan &middot; Order to Cash (O2C)
         Assistant Manager</p>
@@ -1286,6 +1298,10 @@
       var navMenu = document.getElementById('navMenu');
       Array.prototype.forEach.call(navMenu.querySelectorAll('.nav-link'), function (link) {
         link.addEventListener('click', function () {
+          Array.prototype.forEach.call(navMenu.querySelectorAll('.nav-link.active'), function (activeLink) {
+            activeLink.classList.remove('active');
+          });
+          link.classList.add('active');
           if (navMenu.classList.contains('show') && window.bootstrap) {
             window.bootstrap.Collapse.getOrCreateInstance(navMenu).hide();
           }
