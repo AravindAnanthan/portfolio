@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aravind Kuduva Ananthan | Order to Cash (O2C) Assistant Manager</title>
+  <meta name="description"
+    content="Portfolio of Aravind Kuduva Ananthan — Order to Cash (O2C) Assistant Manager with 9+ years in operations, process optimization, and team leadership.">
+  <meta name="author" content="Aravind Kuduva Ananthan">
+  <meta name="theme-color" content="#4f46e5">
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%234f46e5'/%3E%3Ctext x='16' y='21' font-size='13' font-family='Arial' font-weight='700' fill='%23fff' text-anchor='middle'%3EAK%3C/text%3E%3C/svg%3E">
+
+  <!-- Bootstrap 5 (grid, components, colour modes) -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Tailwind CSS (utility classes only — preflight disabled so it co-exists cleanly with Bootstrap) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { corePlugins: { preflight: false } };
+  </script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Set theme early (localStorage > system preference) to avoid a flash of the wrong theme -->
+  <script>
+    (function () {
+      try {
+        var s = localStorage.getItem('theme');
+        var dark = !s && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.setAttribute('data-bs-theme', s || (dark ? 'dark' : 'light'));
+      } catch (e) { }
+    })();
+  </script>
+
+  <style>
+    /* ============================================================
+     THEME VARIABLES (light = default, dark = [data-bs-theme="dark"])
+     ============================================================ */
+    :root {
+      --brand: #4f46e5;
+      --brand-2: #7c3aed;
+      --brand-3: #06b6d4;
+      --brand-rgb: 79, 70, 229;
+      --bg-soft: #eef2ff;
+      --bg-soft-2: #f8fafc;
+      --muted: #64748b;
+      --glass-bg: rgba(255, 255, 255, .8);
+      --glass-border: rgba(148, 163, 184, .25);
+      --chip-bg: rgba(79, 70, 229, .08);
+      --chip-border: rgba(79, 70, 229, .28);
+      --navbar-bg: rgba(255, 255, 255, .86);
+      --hero-tint: linear-gradient(135deg, rgba(79, 70, 229, .14), rgba(6, 182, 212, .08));
+    }
+
+    [data-bs-theme="dark"] {
+      --brand: #818cf8;
+      --brand-2: #a78bfa;
+      --brand-3: #22d3ee;
+      --brand-rgb: 129, 140, 248;
+      --bg-soft: #0d1526;
+      --bg-soft-2: #0a0f1c;
+      --muted: #94a3b8;
+      --glass-bg: rgba(13, 21, 38, .74);
+      --glass-border: rgba(148, 163, 184, .16);
+      --chip-bg: rgba(129, 140, 248, .12);
+      --chip-border: rgba(129, 140, 248, .38);
+      --navbar-bg: rgba(10, 15, 28, .88);
+      --hero-tint: linear-gradient(135deg, rgba(129, 140, 248, .16), rgba(34, 211, 238, .10));
+      color-scheme: dark;
+    }
+
+    /* ============ BASE ============ */
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 84px;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+      overflow-x: hidden;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .navbar-brand {
+      font-family: 'Poppins', 'Inter', sans-serif;
+    }
+
+    ::selection {
+      background: rgba(var(--brand-rgb), .25);
+    }
+
+    ::-webkit-scrollbar {
+      width: 10px;
+      height: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: linear-gradient(var(--brand), var(--brand-2));
+      border-radius: 5px;
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--brand);
+      outline-offset: 2px;
+    }
+
+    /* ============ HELPERS ============ */
+    .text-brand {
+      color: var(--brand);
+    }
+
+    .bg-tint {
+      background-color: var(--bg-soft);
+    }
+
+    .bg-tint-2 {
+      background-color: var(--bg-soft-2);
+    }
+
+    .gradient-text {
+      background: linear-gradient(120deg, var(--brand), var(--brand-2));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: .6rem;
+      font-size: .78rem;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .eyebrow::before,
+    .eyebrow::after {
+      content: '';
+      width: 1.8rem;
+      height: 2px;
+      border-radius: 2px;
+      background: var(--brand);
+    }
+
+    .section {
+      padding: 5.75rem 0;
+    }
+
+    .section-head {
+      margin-bottom: 2.5rem;
+    }
+
+    .section-head h2 {
+      font-size: clamp(1.6rem, 2.6vw, 2.35rem);
+      font-weight: 700;
+    }
+
+    .section-head h2 .gradient-text {
+      display: inline-block;
+    }
+
+    /* ============ BUTTONS ============ */
+    .btn {
+      transition: transform .25s ease, box-shadow .25s ease, background-color .25s ease, border-color .25s ease;
+    }
+
+    .btn-brand {
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      color: #fff;
+      border: 0;
+      font-weight: 600;
+    }
+
+    .btn-brand:hover,
+    .btn-brand:focus-visible {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 26px -6px rgba(var(--brand-rgb), .4);
+    }
+
+    .btn-outline-brand {
+      background: transparent;
+      border: 2px solid var(--brand);
+      color: var(--brand);
+      font-weight: 600;
+    }
+
+    .btn-outline-brand:hover,
+    .btn-outline-brand:focus-visible {
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      color: #fff;
+      transform: translateY(-2px);
+      box-shadow: 0 14px 26px -6px rgba(var(--brand-rgb), .35);
+    }
+
+    .btn-icon {
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: .75rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--chip-bg);
+      border: 1px solid var(--chip-border);
+      color: inherit;
+      cursor: pointer;
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+
+    .btn-icon:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 18px -4px rgba(var(--brand-rgb), .3);
+    }
+
+    /* ============ NAVBAR ============ */
+    .navbar {
+      background: var(--navbar-bg);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      padding-block: .7rem;
+    }
+
+    .navbar.scrolled {
+      box-shadow: 0 3px 14px rgba(15, 23, 42, .18);
+      border-bottom: 1px solid var(--glass-border);
+    }
+
+    .navbar .nav-link {
+      font-weight: 500;
+      position: relative;
+    }
+
+    .navbar .nav-link::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 100%;
+      bottom: 3px;
+      height: 2px;
+      border-radius: 2px;
+      background: var(--brand);
+      transition: right .25s ease;
+    }
+
+    .navbar .nav-link:hover::after,
+    .navbar .nav-link.active::after {
+      right: 0;
+    }
+
+    .navbar .nav-link.active {
+      color: var(--brand);
+    }
+
+    .navbar-toggler {
+      border-color: rgba(var(--brand-rgb), .35);
+    }
+
+    .brand-logo {
+      display: inline-block;
+      width: 2.4rem;
+      height: 3rem;
+      border-radius: .6rem;
+      object-fit: cover;
+      border: 1.5px solid rgba(var(--brand-rgb), .45);
+      box-shadow: 0 4px 10px -2px rgba(var(--brand-rgb), .35);
+    }
+
+    .avatar-lg {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 5rem;
+      height: 5rem;
+      border-radius: 1.4rem;
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      color: #fff;
+      font-size: 1.55rem;
+      font-weight: 700;
+      box-shadow: 0 12px 24px -6px rgba(var(--brand-rgb), .45);
+    }
+
+    /* ============ HERO ============ */
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(180deg, var(--bg-soft), var(--bg-soft-2));
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: var(--hero-tint);
+      pointer-events: none;
+    }
+
+    .hero>.container {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-blob {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(48px);
+      opacity: .5;
+      pointer-events: none;
+      animation: blobFloat 14s ease-in-out infinite;
+    }
+
+    .hero-blob.one {
+      width: 22rem;
+      height: 22rem;
+      background: rgba(var(--brand-rgb), .5);
+      top: -7rem;
+      right: 1rem;
+    }
+
+    .hero-blob.two {
+      width: 18rem;
+      height: 18rem;
+      background: rgba(6, 182, 212, .35);
+      bottom: -5rem;
+      left: 6rem;
+      animation-duration: 18s;
+      animation-delay: 2s;
+    }
+
+    @keyframes blobFloat {
+
+      0%,
+      100% {
+        transform: translate(0, 0) scale(1);
+      }
+
+      50% {
+        transform: translate(2.6rem, -1.6rem) scale(1.18);
+      }
+    }
+
+    /* ============ GLASS CARDS ============ */
+    .glass-card {
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      border-radius: 1.25rem;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      box-shadow: 0 18px 40px -14px rgba(var(--brand-rgb), .18);
+      transition: transform .35s ease, box-shadow .35s ease;
+    }
+
+    .glass-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 26px 52px -14px rgba(var(--brand-rgb), .3);
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: .45rem;
+      padding: .32rem .8rem;
+      border-radius: 999px;
+      background: var(--chip-bg);
+      border: 1px solid var(--chip-border);
+      font-size: .82rem;
+      font-weight: 500;
+    }
+
+    .badge-brand {
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      color: #fff;
+      font-weight: 500;
+    }
+
+    .badge-soft {
+      background: var(--chip-bg);
+      color: var(--brand);
+      border: 1px solid var(--chip-border);
+      font-weight: 500;
+    }
+
+    /* ============ STATS ============ */
+    .stat-box {
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      border-radius: 1rem;
+      padding: 1.15rem 1rem;
+      text-align: center;
+      transition: transform .3s ease, box-shadow .3s ease;
+    }
+
+    .stat-box:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 30px -10px rgba(var(--brand-rgb), .3);
+    }
+
+    .stat-num {
+      font-family: 'Poppins', 'Inter', sans-serif;
+      font-size: 2rem;
+      font-weight: 700;
+      background: linear-gradient(120deg, var(--brand), var(--brand-2));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .stat-label {
+      font-size: .85rem;
+      color: var(--muted);
+      margin-top: .4rem;
+    }
+
+    .mini-num {
+      font-family: 'Poppins', 'Inter', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--brand);
+    }
+
+    /* ============ SKILLS ============ */
+    .skill-item {
+      display: flex;
+      flex-direction: column;
+      gap: .55rem;
+    }
+
+    .skill-meta {
+      display: flex;
+      justify-content: space-between;
+      font-size: .9rem;
+      font-weight: 600;
+    }
+
+    .skill-track {
+      height: .7rem;
+      border-radius: 999px;
+      background: rgba(148, 163, 184, .22);
+      overflow: hidden;
+    }
+
+    .skill-fill {
+      display: block;
+      width: 0;
+      height: 100%;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--brand), var(--brand-2));
+      transition: width 1.3s cubic-bezier(.25, .8, .25, 1);
+    }
+
+    .pillar-icon {
+      width: 3rem;
+      height: 3rem;
+      border-radius: .9rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--chip-bg);
+      border: 1px solid var(--chip-border);
+      color: var(--brand);
+      font-size: 1.25rem;
+    }
+
+    /* ============ TIMELINE ============ */
+    .timeline {
+      position: relative;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 1.05rem;
+      top: 0;
+      bottom: 0;
+      width: .16rem;
+      background: linear-gradient(180deg, var(--brand), var(--brand-2));
+      border-radius: 2px;
+      opacity: .55;
+    }
+
+    .timeline-item {
+      position: relative;
+      padding-left: 3.4rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .timeline-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .timeline-dot {
+      position: absolute;
+      left: 0;
+      top: .9rem;
+      width: 2.3rem;
+      height: 2.3rem;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--glass-bg);
+      border: 2px solid var(--brand);
+      color: var(--brand);
+      font-size: 1rem;
+      box-shadow: 0 0 0 5px rgba(var(--brand-rgb), .14);
+    }
+
+    .role-badge {
+      background: var(--chip-bg);
+      color: var(--muted);
+      border: 1px solid var(--chip-border);
+      font-weight: 500;
+    }
+
+    .ach {
+      list-style: none;
+      padding-left: 0;
+      display: flex;
+      flex-direction: column;
+      gap: .5rem;
+    }
+
+    .ach li {
+      position: relative;
+      padding-left: 1.55rem;
+      line-height: 1.55;
+      font-size: .95rem;
+    }
+
+    .ach li::before {
+      content: '\2192';
+      position: absolute;
+      left: 0;
+      top: .05em;
+      color: var(--brand);
+      font-weight: 700;
+    }
+
+    /* ============ AWARDS ============ */
+    .award-icon {
+      width: 3.4rem;
+      height: 3.4rem;
+      border-radius: 1rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--chip-bg);
+      border: 1px dashed var(--chip-border);
+      color: var(--brand);
+      font-size: 1.4rem;
+    }
+
+    /* ============ CONTACT / FOOTER ============ */
+    #contact {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(180deg, var(--bg-soft), var(--bg-soft-2));
+    }
+
+    .contact-card {
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      border-radius: 1.1rem;
+      color: inherit;
+      transition: transform .3s ease, box-shadow .3s ease;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 16px 30px -10px rgba(var(--brand-rgb), .3);
+    }
+
+    footer {
+      background: var(--bg-soft-2);
+    }
+
+    /* ============ SCROLL REVEAL ============ */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity .7s ease, transform .7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    .d1 {
+      transition-delay: .08s;
+    }
+
+    .d2 {
+      transition-delay: .16s;
+    }
+
+    .d3 {
+      transition-delay: .24s;
+    }
+
+    .d4 {
+      transition-delay: .32s;
+    }
+
+    /* ============ BACK TO TOP ============ */
+    #backToTop {
+      position: fixed;
+      right: 1.25rem;
+      bottom: 1.25rem;
+      width: 2.8rem;
+      height: 2.8rem;
+      border-radius: 50%;
+      border: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      color: #fff;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .3s ease, transform .3s ease;
+      z-index: 1050;
+    }
+
+    #backToTop.show {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(-2px);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .reveal {
+        opacity: 1;
+        transform: none;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body class="position-relative" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-root-margin="150px" tabindex="0">
+  <noscript>
+    <style>
+      .reveal {
+        opacity: 1;
+        transform: none
+      }
+
+      .skill-fill {
+        width: 100%
+      }
+
+      .stat-num {
+        color: var(--brand)
+      }
+    </style>
+  </noscript>
+
+  <!-- ================= NAVBAR ================= -->
+  <nav class="navbar navbar-expand-lg sticky-top" id="mainNav" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+        <img class="brand-logo" src="pic.jpeg" alt="Aravind Kuduva Ananthan">
+        <span class="fw-semibold">Aravind <span class="gradient-text">KA</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#awards">Awards</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="d-flex align-items-center gap-2 flex-shrink-0">
+        <button class="btn-icon" id="themeToggle" type="button" aria-label="Toggle colour theme" title="Toggle theme">
+          <i class="bi bi-moon-stars"></i><i class="bi bi-sun" style="display:none"></i>
+        </button>
+        <a href="Aravind_Kuduva_Ananthan_Resume.pdf" download
+          class="btn btn-brand d-none d-md-inline-flex align-items-center gap-2"><i class="bi bi-download"></i>
+          Resume</a>
+        <a href="Aravind_Kuduva_Ananthan_Resume.pdf" download class="btn btn-outline-brand btn-sm d-md-none px-2"
+          aria-label="Download resume"><i class="bi bi-download"></i></a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="hero pt-5 pb-5" id="home">
+      <div class="hero-blob one"></div>
+      <div class="hero-blob two"></div>
+      <div class="container py-4">
+        <div class="row align-items-center g-4 g-lg-5">
+          <div class="col-lg-7">
+            <span class="chip reveal d-inline-flex mx-0 mb-3"><i class="bi bi-briefcase-fill"></i> Order to Cash (O2C)
+              &nbsp;&middot;&nbsp; Assistant Manager</span>
+            <h1 class="display-5 fw-bold reveal d1" style="font-weight:700">Aravind <span class="gradient-text">Kuduva
+                Ananthan</span></h1>
+            <p class="lead text-body-secondary mt-3 reveal d2" style="max-width:34rem">
+              Results-driven Order to Cash (O2C) professional with 9+ years of experience turning high-volume order
+              lifecycles into measurable outcomes &mdash; through process optimisation, automation, and strong team
+              leadership.
+            </p>
+            <div class="d-flex flex-wrap gap-3 align-items-center mt-4 reveal d4">
+              <a href="Aravind_Kuduva_Ananthan_Resume.pdf" download class="btn btn-brand px-4 py-2"><i
+                  class="bi bi-download me-2"></i>Download Resume</a>
+              <a href="#contact" class="btn btn-outline-brand px-4 py-2">Let&apos;s Talk</a>            
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="reveal d1">
+              <div class="glass-card p-4 h-100">
+                <div class="d-flex align-items-center gap-3">                  
+                  <div class="min-w-0">                   
+                    <span class="text-body-secondary small d-block">Assistant Manager &middot; Order to Cash (O2C) Operations &middot; Infosys
+                      BPM</span>
+                  </div>
+                </div>
+                <hr class="opacity-25 my-3">
+                <div class="row g-2">
+                  <div class="col-6">
+                    <div class="stat-box p-2">
+                      <div class="mini-num">8+</div>
+                      <div class="stat-label small">Years Experience</div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="stat-box p-2">
+                      <div class="mini-num">30+</div>
+                      <div class="stat-label small">Team Size</div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="stat-box p-2">
+                      <div class="mini-num">25+</div>
+                      <div class="stat-label small">Metrics Tracked</div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="stat-box p-2">
+                      <div class="mini-num">95%+</div>
+                      <div class="stat-label small">Escalations Resolved</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-3 g-md-4 justify-content-center mt-4">
+          <div class="col-6 col-md-3 reveal">
+            <div class="stat-box h-100">
+              <div class="stat-num" data-target="10" data-suffix="+">0</div>
+              <div class="stat-label">Total Years in Operations</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 reveal d1">
+            <div class="stat-box h-100">
+              <div class="stat-num" data-target="15000" data-suffix="+">0</div>
+              <div class="stat-label">Orders Managed / Month</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 reveal d2">
+            <div class="stat-box h-100">
+              <div class="stat-num" data-target="99.2" data-decimals="1" data-suffix="%">0</div>
+              <div class="stat-label">Order Accuracy</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 reveal d3">
+            <div class="stat-box h-100">
+              <div class="stat-num" data-target="28" data-suffix="%">0</div>
+              <div class="stat-label">Faster Order-to-Invoice</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================= ABOUT ================= -->
+    <section class="section bg-tint-2" id="about">
+      <div class="container">
+        <div class="section-head text-center reveal">
+          <span class="eyebrow">About Me</span>
+          <h2 class="mt-3">Professional <span class="gradient-text">Summary</span></h2>
+        </div>
+        <div class="row g-4 align-items-stretch">
+          <div class="col-lg-7 reveal">
+            <div class="glass-card p-4 h-100">
+              <div class="d-flex align-items-center gap-2 mb-3"><i class="bi bi-person-badge text-brand fs-4"></i>
+                <h3 class="h5 mb-0">Results-driven O2C Leader</h3>
+              </div>
+              <p>Results-driven Order to Cash (O2C) Assistant Manager with <strong>9+ years</strong> of progressive
+                experience in operations, process optimization, and team leadership. Proven expertise in managing
+                high-volume O2C operations, driving process improvements, and enhancing customer experience across
+                enterprise-scale environments.</p>
+              <p class="mb-3">Track record of leading cross-functional teams, developing KPIs and automated dashboards,
+                and implementing process enhancements that reduce costs and improve operational efficiency. Skilled in
+                <strong>Oracle/SAP systems</strong>, data analytics, and stakeholder management.</p>
+              <div class="d-flex flex-wrap gap-2 align-items-center">
+                <span class="badge rounded-pill badge-brand"><i class="bi bi-graph-up-arrow me-1"></i>Process
+                  Optimisation</span>
+                <span class="badge rounded-pill badge-brand"><i class="bi bi-people me-1"></i>Team Leadership</span>
+                <span class="badge rounded-pill badge-brand"><i class="bi bi-bar-chart me-1"></i>Data &amp; BI</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 reveal d1">
+            <div class="glass-card p-4 h-100">
+              <div class="d-flex align-items-center gap-2 mb-3"><i class="bi bi-card-checklist text-brand fs-4"></i>
+                <h3 class="h5 mb-0">Quick Facts</h3>
+              </div>
+              <ul class="list-unstyled d-flex flex-column gap-3 small">
+                <li class="d-flex gap-3"><span class="me-1"><i
+                      class="bi bi-briefcase text-brand fs-5"></i></span><span><span class="fw-semibold d-block">Current
+                      Role</span><span class="text-body-secondary d-block">Assistant Manager &mdash; O2C Operations,
+                      Infosys BPM Limited</span></span></li>
+                <li class="d-flex gap-3"><span class="me-1"><i
+                      class="bi bi-hourglass-split text-brand fs-5"></i></span><span><span
+                      class="fw-semibold d-block">Experience</span><span class="text-body-secondary d-block">10+ years
+                      &middot; Since February 2015</span></span></li>
+                <li class="d-flex gap-3"><span class="me-1"><i
+                      class="bi bi-geo-alt-fill text-brand fs-5"></i></span><span><span
+                      class="fw-semibold d-block">Location</span><span class="text-body-secondary d-block">Bangalore,
+                      India</span></span></li>
+                <li class="d-flex gap-3"><span class="me-1"><i
+                      class="bi bi-diagram-3 text-brand fs-5"></i></span><span><span class="fw-semibold d-block">Focus
+                      Areas</span><span class="text-body-secondary d-block">O2C &middot; Q2C &middot; Order Management
+                      &middot; Billing &amp; Invoicing</span></span></li>               
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p class="text-center small text-body-secondary mt-4 mb-2 reveal">Impact highlights from the journey so far</p>
+        <div class="row g-3 g-md-4 justify-content-center">
+          <div class="col-6 col-md-3 reveal">
+            <div class="stat-box h-100">
+              <div class="stat-num" data-target="96" data-suffix="%">0</div>
+              <div class="stat-label">Team CSAT (up from 75%)</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 reveal d1">
+            <div class="stat-box h-100">
+              <div class="stat-num" data-target="92" data-suffix="%">0</div>
+              <div class="stat-label">First-Call Resolution</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 reveal d2">
+            <div class="stat-box h-100">
+              <div class="stat-num" data-target="32" data-suffix="%">0</div>
+              <div class="stat-label">Escalations Reduced</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 reveal d3">
+            <div class="stat-box h-100">
+              <div class="stat-num" data-target="40" data-suffix="%">0</div>
+              <div class="stat-label">Less Manual Reporting</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================= SKILLS ================= -->
+    <section class="section bg-tint" id="skills">
+      <div class="container">
+        <div class="section-head text-center reveal">
+          <span class="eyebrow">What I Bring</span>
+          <h2 class="mt-3">Core <span class="gradient-text">Competencies</span></h2>
+        </div>
+        <div class="reveal">
+          <div class="glass-card p-4 p-lg-4">
+            <div class="row g-4">
+              <div class="col-lg-4 col-md-6 d-flex flex-column gap-3">
+                <div class="d-flex align-items-center gap-2"><span class="pillar-icon"><i
+                      class="bi bi-cash-coin"></i></span>
+                  <h3 class="h6 mb-0 fw-semibold">O2C &amp; Revenue</h3>
+                </div>
+                <div class="d-flex flex-wrap gap-1">
+                  <span class="chip">Order to Cash</span><span class="chip">Quote to Cash</span><span class="chip">Order
+                    Management &amp; Entry</span><span class="chip">Billing &amp; Invoicing</span><span
+                    class="chip">Revenue Recognition</span>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 d-flex flex-column gap-3">
+                <div class="d-flex align-items-center gap-2"><span class="pillar-icon"><i
+                      class="bi bi-people"></i></span>
+                  <h3 class="h6 mb-0 fw-semibold">Leadership &amp; People</h3>
+                </div>
+                <div class="d-flex flex-wrap gap-1">
+                  <span class="chip">Team Leadership &amp; Coaching</span><span class="chip">Performance
+                    Management</span><span class="chip">KPI Development &amp; Tracking</span>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 d-flex flex-column gap-3">
+                <div class="d-flex align-items-center gap-2"><span class="pillar-icon"><i
+                      class="bi bi-graph-up-arrow"></i></span>
+                  <h3 class="h6 mb-0 fw-semibold">Continuous Improvement</h3>
+                </div>
+                <div class="d-flex flex-wrap gap-1">
+                  <span class="chip">Process Improvement &amp; Optimization</span><span class="chip">Operational
+                    Excellence</span>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 d-flex flex-column gap-3">
+                <div class="d-flex align-items-center gap-2"><span class="pillar-icon"><i
+                      class="bi bi-bar-chart"></i></span>
+                  <h3 class="h6 mb-0 fw-semibold">Systems &amp; Data</h3>
+                </div>
+                <div class="d-flex flex-wrap gap-1">
+                  <span class="chip">Oracle &amp; SAP Order Entry</span><span class="chip">Data Analysis &amp;
+                    Forecasting</span><span class="chip">Business Intelligence</span>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 d-flex flex-column gap-3">
+                <div class="d-flex align-items-center gap-2"><span class="pillar-icon"><i
+                      class="bi bi-chat-square"></i></span>
+                  <h3 class="h6 mb-0 fw-semibold">Collaboration</h3>
+                </div>
+                <div class="d-flex flex-wrap gap-1">
+                  <span class="chip">Cross-Functional Collaboration</span><span class="chip">Escalation
+                    Management</span><span class="chip">Customer Relationship Management</span>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 d-flex flex-column justify-content-center align-items-start">
+                <p class="small text-body-secondary mb-0">A blend of domain mastery, people leadership, and data fluency
+                  that keeps large-scale O2C operations accurate, on time, and continuously improving.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row g-4 mt-1">
+          <div class="col-lg-6 reveal">
+            <div class="glass-card p-4 h-100">
+              <h3 class="h5 mb-4"><i class="bi bi-speedometer me-2 text-brand"></i>Proficiency Highlights</h3>
+              <div class="skill-item">
+                <div class="skill-meta"><span>Order to Cash (O2C) Operations</span><span>96%</span></div>
+                <div class="skill-track"><span class="skill-fill" data-width="96"></span></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta"><span>Team Leadership &amp; Coaching</span><span>94%</span></div>
+                <div class="skill-track"><span class="skill-fill" data-width="94"></span></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta"><span>Oracle &amp; SAP Order Systems</span><span>92%</span></div>
+                <div class="skill-track"><span class="skill-fill" data-width="92"></span></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta"><span>Process Improvement &amp; Optimization</span><span>90%</span></div>
+                <div class="skill-track"><span class="skill-fill" data-width="90"></span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 reveal d1">
+            <div class="glass-card p-4 h-100">
+              <h3 class="h5 mb-4"><i class="bi bi-bar-chart me-2 text-brand"></i>Tools &amp; Methods</h3>
+              <div class="skill-item">
+                <div class="skill-meta"><span>Cross-Functional Collaboration</span><span>95%</span></div>
+                <div class="skill-track"><span class="skill-fill" data-width="95"></span></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta"><span>Escalation Management</span><span>92%</span></div>
+                <div class="skill-track"><span class="skill-fill" data-width="92"></span></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta"><span>Data Analytics &amp; Business Intelligence</span><span>88%</span></div>
+                <div class="skill-track"><span class="skill-fill" data-width="88"></span></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta"><span>Billing, Invoicing &amp; Collections</span><span>85%</span></div>
+                <div class="skill-track"><span class="skill-fill" data-width="85"></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================= EXPERIENCE ================= -->
+    <section class="section bg-tint-2" id="experience">
+      <div class="container">
+        <div class="section-head text-center reveal">
+          <span class="eyebrow">Career Path</span>
+          <h2 class="mt-3">Professional <span class="gradient-text">Experience</span></h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <span class="timeline-dot"><i class="bi bi-briefcase"></i></span>
+            <div class="glass-card p-4">
+              <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-1">
+                <h3 class="h5 fw-semibold mb-0">Assistant Manager &mdash; Order to Cash Operations</h3>
+                <span class="badge rounded-pill role-badge"><i class="bi bi-calendar3 me-1"></i>Jan 2018 &ndash; Present
+                  &middot; 8+ yrs</span>
+              </div>
+              <div class="d-flex align-items-center gap-2 text-body-secondary small mb-3">
+                <i class="bi bi-building me-1"></i><span>Infosys BPM Limited &middot; Bangalore</span>
+              </div>
+              <ul class="ach">
+                <li>Orchestrated high-performance team of 10+ order booking specialists managing 15,000+ monthly orders;
+                  maintained 99.2% order accuracy and 98.5% on-time delivery metrics.</li>
+                <li>Optimized end-to-end O2C processes including order intake, validation, billing, invoicing, and
+                  collections support; reduced order-to-invoice time by 28% through systematic workflow improvements and
+                  automation initiatives.</li>
+                <li>Developed and implemented automated KPI dashboards tracking 25+ operational metrics (QTD, MTD, CSAT,
+                  SLA compliance); generated weekly performance reports reducing manual reporting time by 40%.</li>
+                <li>Championed team development through structured coaching and performance management; improved team
+                  CSAT scores from 75% to 96% (26-point increase) and reduced escalations by 32%.</li>
+                <li>Partnered strategically with sales, customer service, and finance teams to streamline O2C alignment;
+                  resolved 95%+ escalated issues within SLA with average 2-day resolution time.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="timeline-item reveal d1">
+            <span class="timeline-dot"><i class="bi bi-people"></i></span>
+            <div class="glass-card p-4">
+              <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-1">
+                <h3 class="h5 fw-semibold mb-0">Customer Care Executive</h3>
+                <span class="badge rounded-pill role-badge"><i class="bi bi-calendar3 me-1"></i>Dec 2015 &ndash; Oct
+                  2017 &middot; 2 yrs</span>
+              </div>
+              <div class="d-flex align-items-center gap-2 text-body-secondary small mb-3">
+                <i class="bi bi-building me-1"></i><span>Allsec Technology &middot; Bangalore</span>
+              </div>
+              <ul class="ach">
+                <li>Systematically analyzed root causes of customer issues and implemented targeted solutions; achieved
+                  92% first-call resolution rate and reduced repeat interactions by 38%.</li>
+                <li>Managed multi-channel escalation workflows (voice and email); resolved 200+ complex customer issues
+                  monthly with average resolution time of 1.5 business days.</li>
+                <li>Identified and documented 15+ process improvement opportunities; collaborated with process
+                  management team to implement enhancements reducing cycle time by 22%.</li>
+                <li>Performed statistical analysis and forecasting to predict service demand and optimize resource
+                  allocation; improved staffing efficiency by 18%.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="timeline-item reveal d2">
+            <span class="timeline-dot"><i class="bi bi-keyboard"></i></span>
+            <div class="glass-card p-4">
+              <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-1">
+                <h3 class="h5 fw-semibold mb-0">Data Entry Executive</h3>
+                <span class="badge rounded-pill role-badge"><i class="bi bi-calendar3 me-1"></i>Feb 2015 &ndash; Nov
+                  2015 &middot; 9 mos</span>
+              </div>
+              <div class="d-flex align-items-center gap-2 text-body-secondary small mb-3">
+                <i class="bi bi-building me-1"></i><span>Bizmate (Online/Offline) &middot; Bangalore</span>
+              </div>
+              <ul class="ach">
+                <li>Executed high-volume data entry operations processing 8,000+ records monthly with 99.1% accuracy
+                  rate across multiple client databases.</li>
+                <li>Consistently met or exceeded target timelines (100% on-time delivery) while maintaining stringent
+                  quality standards; zero errors on critical data fields.</li>
+                <li>Performed data validation and format alignment ensuring seamless integration with client systems;
+                  supported 5+ concurrent client projects.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- ================= AWARDS ================= -->
+    <section class="section bg-tint" id="awards">
+      <div class="container">
+        <div class="section-head text-center reveal">
+          <span class="eyebrow">Recognition</span>
+          <h2 class="mt-3">Awards &amp; <span class="gradient-text">Accolades</span></h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3 reveal">
+            <div class="glass-card p-4 h-100">
+              <span class="award-icon"><i class="bi bi-patch-check"></i></span>
+              <h3 class="h6 fw-semibold mt-3">Cisco Quality Performance Award</h3>
+              <p class="small text-body-secondary mb-0 mt-1">Recognition for maintaining the highest quality standards
+                and error-free operations.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 reveal d1">
+            <div class="glass-card p-4 h-100">
+              <span class="award-icon"><i class="bi bi-award"></i></span>
+              <h3 class="h6 fw-semibold mt-3">Cisco Engagement Award</h3>
+              <p class="small text-body-secondary mb-0 mt-1">Commended for exceptional collaboration with client and
+                vendor stakeholders, driving positive outcomes.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 reveal d2">
+            <div class="glass-card p-4 h-100">
+              <span class="award-icon"><i class="bi bi-trophy"></i></span>
+              <h3 class="h6 fw-semibold mt-3">Cisco Excellence in Team &amp; Management Skills</h3>
+              <p class="small text-body-secondary mb-0 mt-1">Recognized for outstanding leadership capabilities and team
+                development initiatives.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 reveal d3">
+            <div class="glass-card p-4 h-100">
+              <span class="award-icon"><i class="bi bi-star"></i></span>
+              <h3 class="h6 fw-semibold mt-3">I-Star Certificate for Better Performance</h3>
+              <p class="small text-body-secondary mb-0 mt-1">Awarded for 4 quarter-end performance periods demonstrating
+                consistent excellence.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section bg-tint-2" id="education">
+      <div class="container">
+        <div class="section-head text-center reveal">
+          <span class="eyebrow">Learning</span>
+          <h2 class="mt-3">Education</h2>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8 reveal">
+            <div class="glass-card p-4 d-flex flex-column flex-md-row align-items-md-center gap-3 gap-md-4">
+              <span class="award-icon" style="width:4.4rem;height:4.4rem;flex-shrink:0"><i
+                  class="bi bi-mortarboard"></i></span>
+              <div class="min-w-0">
+                <h3 class="h5 fw-semibold mb-1">Bachelor of Engineering (B.E.) &mdash; Electrical and Electronics
+                  Engineering</h3>
+                <div class="text-body-secondary">A.R.J. College of Engineering, Mannargudi</div>
+                <div class="d-flex flex-wrap gap-2 mt-2">
+                  <span class="badge rounded-pill role-badge"><i class="bi bi-calendar3 me-1"></i>Graduated 2013</span>
+                  <span class="badge rounded-pill role-badge"><i class="bi bi-mortarboard me-1"></i>CGPA 6.87 /
+                    10</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head text-center reveal">
+          <span class="eyebrow">Get In Touch</span>
+          <h2 class="mt-3">Let&apos;s <span class="gradient-text">Connect</span></h2>
+        </div>
+        <p class="text-center text-body-secondary reveal d1" style="max-width:36rem;margin:0 auto">
+          Open to conversations about O2C operations, process excellence, and team leadership &mdash; or simply to say
+          hello.
+        </p>
+        <div class="row g-4 mt-3 justify-content-center">
+          <div class="col-md-6 col-lg-3 reveal">
+            <a href="mailto:kaaravindananthan@gmail.com" class="contact-card d-block h-100 p-4 text-decoration-none">
+              <span class="award-icon mb-3 d-inline-flex"><i class="bi bi-envelope-at"></i></span>
+              <h3 class="h6 fw-semibold mb-1">Email</h3>
+              <span class="small d-block text-body-secondary"
+                style="word-break:break-all">kaaravindananthan@gmail.com</span>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-3 reveal d1">
+            <a href="tel:+917418276065" class="contact-card d-block h-100 p-4 text-decoration-none">
+              <span class="award-icon mb-3 d-inline-flex"><i class="bi bi-telephone-fill"></i></span>
+              <h3 class="h6 fw-semibold mb-1">Phone</h3>
+              <span class="small d-block text-body-secondary">+91 74182 76065</span>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-3 reveal d2">
+            <a href="https://www.linkedin.com/in/aravind-kuduva-ananthan-974786b5" target="_blank" rel="noreferrer"
+              class="contact-card d-block h-100 p-4 text-decoration-none">
+              <span class="award-icon mb-3 d-inline-flex"><i class="bi bi-linkedin"></i></span>
+              <h3 class="h6 fw-semibold mb-1">LinkedIn</h3>
+              <span class="small d-block text-body-secondary"
+                style="word-break:break-all">aravind-kuduva-ananthan-974786b5</span>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-3 reveal d3">
+            <div class="contact-card d-block h-100 p-4">
+              <span class="award-icon mb-3 d-inline-flex"><i class="bi bi-geo-alt-fill"></i></span>
+              <h3 class="h6 fw-semibold mb-1">Location</h3>
+              <span class="small d-block text-body-secondary">Bangalore, India</span>
+            </div>
+          </div>
+        </div>
+    </section>
+  </main>
+  <footer class="py-5">
+    <div class="container">
+      <div class="d-flex justify-content-center mb-3">
+        <img class="brand-logo" src="pic.jpeg" alt="Aravind Kuduva Ananthan" style="width:3.2rem;height:3.2rem;border-radius:1rem">
+      </div>
+      <p class="text-center small text-body-secondary mb-1">© 2026 Aravind Kuduva Ananthan &middot; Order to Cash (O2C)
+        Assistant Manager</p>
+
+    </div>
+  </footer>
+
+  <button id="backToTop" type="button" aria-label="Back to top"><i class="bi bi-arrow-up-short fs-5"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    (function () {
+      'use strict';
+      var root = document.documentElement;
+
+      /* ---- Theme toggle (persisted in localStorage) ---- */
+      var themeBtn = document.getElementById('themeToggle');
+      function currentTheme() { return root.getAttribute('data-bs-theme') === 'dark' ? 'dark' : 'light'; }
+      function syncIcons() {
+        var dark = currentTheme() === 'dark';
+        Array.prototype.forEach.call(themeBtn.querySelectorAll('i'), function (icon) {
+          var isSun = icon.classList.contains('bi-sun');
+          icon.style.display = (isSun === dark) ? '' : 'none';
+        });
+      }
+      themeBtn.addEventListener('click', function () {
+        var next = currentTheme() === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-bs-theme', next);
+        try { localStorage.setItem('theme', next); } catch (e) { }
+        syncIcons();
+      });
+      syncIcons();
+
+      /* ---- Navbar scroll shadow ---- */
+      var nav = document.getElementById('mainNav');
+      function scrollTop() { return window.scrollY || window.pageYOffset || document.documentElement.scrollTop || 0; }
+      function navShadow() { if (scrollTop() > 24) nav.classList.add('scrolled'); else nav.classList.remove('scrolled'); }
+      window.addEventListener('scroll', navShadow, { passive: true });
+      navShadow();
+
+      /* ---- Scroll reveal ---- */
+      var revealEls = Array.prototype.slice.call(document.querySelectorAll('.reveal'));
+      var revealObs = ('IntersectionObserver' in window) ? new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('visible'); revealObs.unobserve(en.target); } });
+      }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }) : null;
+      if (revealObs) revealEls.forEach(function (el) { revealObs.observe(el); });
+      else revealEls.forEach(function (el) { el.classList.add('visible'); });
+
+      /* ---- Animated counters ---- */
+      function animateCounter(el) {
+        var target = parseFloat(el.getAttribute('data-target'));
+        var dec = parseInt(el.getAttribute('data-decimals') || '0', 10);
+        var suf = el.getAttribute('data-suffix') || '';
+        var t0 = performance.now(), dur = 1500;
+        var step = function (now) {
+          var p = Math.min((now - t0) / dur, 1);
+          var eased = 1 - Math.pow(1 - p, 3);
+          el.textContent = (target * eased).toFixed(dec).replace(/\B(?=(\d{3})+(?!\d))/g, ',') + suf;
+          if (p < 1) requestAnimationFrame(step);
+        };
+        requestAnimationFrame(step);
+      }
+      var statObs = ('IntersectionObserver' in window) ? new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) { if (en.isIntersecting) { animateCounter(en.target); statObs.unobserve(en.target); } });
+      }, { threshold: 0.6 }) : null;
+      var statNums = Array.prototype.slice.call(document.querySelectorAll('.stat-num'));
+      if (statObs) statNums.forEach(function (el) { statObs.observe(el); });
+      else statNums.forEach(function (el) { el.textContent = el.getAttribute('data-target') + (el.getAttribute('data-suffix') || ''); });
+
+      /* ---- Skill bars ---- */
+      function fillBar(el) { el.style.width = el.getAttribute('data-width') + '%'; }
+      var barObs = ('IntersectionObserver' in window) ? new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) { if (en.isIntersecting) { fillBar(en.target); barObs.unobserve(en.target); } });
+      }, { threshold: 0.35 }) : null;
+      Array.prototype.forEach.call(document.querySelectorAll('.skill-fill'), function (el) {
+        if (barObs) barObs.observe(el); else fillBar(el);
+      });
+
+      /* ---- Back to top ---- */
+      var btt = document.getElementById('backToTop');
+      function bttShow() { btt.classList.toggle('show', scrollTop() > 700); }
+      window.addEventListener('scroll', bttShow, { passive: true });
+      bttShow();
+      btt.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+
+      /* ---- Auto-close mobile nav ---- */
+      var navMenu = document.getElementById('navMenu');
+      Array.prototype.forEach.call(navMenu.querySelectorAll('.nav-link'), function (link) {
+        link.addEventListener('click', function () {
+          if (navMenu.classList.contains('show') && window.bootstrap) {
+            window.bootstrap.Collapse.getOrCreateInstance(navMenu).hide();
+          }
+        });
+      });
+    })();
+  </script>
+</body>
+
+</html>
